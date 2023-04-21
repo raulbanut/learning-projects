@@ -59,6 +59,35 @@ class Solution {
     }
     
     func mergeAlternately(_ word1: String, _ word2: String) -> String {
+        //        Slow implementation
+        //        if countWord1 <= 0 {
+        //            return word2
+        //        }
+        //        else if countWord2 <= 0 {
+        //            return word1
+        //        }
+        //
+        //        var smallerString: String, biggerString: String
+        //
+        //        if countWord1 > countWord2 {
+        //            smallerString = word2
+        //            biggerString = word1
+        //        } else {
+        //            smallerString = word1
+        //            biggerString = word2
+        //        }
+        //
+        //        var newWord = ""
+        //
+        //        for index in 0..<smallerString.count {
+        //            newWord = newWord + "\(String(Array(word1)[index]))" + "\(String(Array(word2)[index]))"
+        //        }
+        //
+        //        for index in smallerString.count..<biggerString.count {
+        //            newWord = newWord + "\(String(Array(biggerString)[index]))"
+        //        }
+        //
+        //        return newWord
         let word1 = Array(word1)
         let word2 = Array(word2)
         let countWord1 = word1.count
@@ -77,37 +106,26 @@ class Solution {
         }
         
         return String(result)
+    }
+    
+    func findTheDifference(_ s: String, _ t: String) -> Character {
+        var s = Array(s)
+        var t = Array(t)
         
-//        Slow implementation
-//        if countWord1 <= 0 {
-//            return word2
-//        }
-//        else if countWord2 <= 0 {
-//            return word1
-//        }
-//
-//        var smallerString: String, biggerString: String
-//
-//        if countWord1 > countWord2 {
-//            smallerString = word2
-//            biggerString = word1
-//        } else {
-//            smallerString = word1
-//            biggerString = word2
-//        }
-//
-//        var newWord = ""
-//
-//        for index in 0..<smallerString.count {
-//            newWord = newWord + "\(String(Array(word1)[index]))" + "\(String(Array(word2)[index]))"
-//        }
-//
-//        for index in smallerString.count..<biggerString.count {
-//            newWord = newWord + "\(String(Array(biggerString)[index]))"
-//        }
-//
-//        return newWord
+        var sSum = 0
+        var tSum = 0
+        
+        for index in 0..<t.count {
+            if index != t.count - 1 {
+                sSum += Int(s[index].asciiValue!)
+            }
+            tSum += Int(t[index].asciiValue!)
+        }
+        
+        return Character(UnicodeScalar(tSum -  sSum)!)
     }
 }
 
 var solution = Solution()
+
+solution.findTheDifference("abcd", "abedc")
