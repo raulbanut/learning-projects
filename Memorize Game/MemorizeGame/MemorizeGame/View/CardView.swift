@@ -18,6 +18,8 @@ struct CardView: View {
                 roundedShape.strokeBorder(lineWidth: 3)
                 Text(card.content)
                     .font(.largeTitle)
+            } else if card.isMatched {
+                roundedShape.opacity(0)
             } else {
                 roundedShape.fill()
             }
