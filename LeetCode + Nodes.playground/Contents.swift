@@ -64,6 +64,28 @@ class Solution {
             }
         }
     }
+    
+    private func recursionInorder(_ node: TreeNode?, _ result: inout [Int]) {
+        if node == nil {
+            return
+        }
+        
+        recursionInorder(node?.left, &result)
+        result.append(node!.val!)
+        recursionInorder(node?.right, &result)
+    }
+    
+    func inorderTraversal(_ root: TreeNode?) -> [Int] {
+        var result: [Int] = []
+        recursionInorder(root, &result)
+        return result
+    }
 }
 
+var root = TreeNode(1)
+root.right = TreeNode(2)
+root.right?.left = TreeNode(3)
+
 var solution = Solution()
+
+solution.inorderTraversal(root)
