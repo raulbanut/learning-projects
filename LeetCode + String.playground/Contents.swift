@@ -124,8 +124,32 @@ class Solution {
         
         return Character(UnicodeScalar(tSum -  sSum)!)
     }
+    
+    func multiply(_ num1: String, _ num2: String) -> String {
+        var sum = [Int](repeating: 0, count: num1.count + num2.count)
+        
+        for (counterOne, numberOne) in num1.enumerated().reversed() {
+            for (counterTwo, numberTwo) in num2.enumerated().reversed() {
+                guard let digitOne = Int(String(numberOne)), let digitTwo = Int(String(numberTwo)) else {
+                    return ""
+                }
+                    
+                let multiply = digitOne * digitTwo + sum[counterOne + counterTwo + 1]
+                
+                sum[counterOne + counterTwo + 1] = multiply % 10
+                sum[counterOne + counterTwo] += multiply / 10
+            }
+        }
+        
+        while let firstChar = sum.first, firstChar == 0 { sum.removeFirst() }
+        
+        let response = sum.map { String($0) }.joined()
+        
+        return response.count > 0 ? response : "0"
+    }
 }
 
 var solution = Solution()
 
-solution.findTheDifference("abcd", "abedc")
+//solution.findTheDifference("abcd", "abedc")
+solution.multiply("123", "456")
