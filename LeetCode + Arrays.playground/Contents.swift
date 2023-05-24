@@ -37,12 +37,36 @@ class Solution {
         
         return maxProfit
     }
+    
+    func validMountainArray(_ arr: [Int]) -> Bool {
+        if arr.count < 3 { return false }
+        
+        var index = 0
+        
+        while index + 1 < arr.count && arr[index] < arr[index + 1] {
+            print(arr[index])
+            index += 1
+        }
+        
+        if index == 0 || index == arr.count - 1 {
+            return false
+        }
+        
+        while index + 1 < arr.count && arr[index] > arr[index + 1] {
+            index += 1
+        }
+        
+        return index == arr.count - 1
+    }
 }
 
 var solution = Solution()
 
-solution.maxProfit( [1,2] )
-solution.maxProfit( [7,6,4,3,1] )
-solution.maxProfit( [7,1,5,3,6,4] )
+solution.validMountainArray( [ 3,4,5 ] )
+
+//solution.maxProfit( [1,2] )
+//solution.maxProfit( [7,6,4,3,1] )
+//solution.maxProfit( [7,1,5,3,6,4] )
+//
 //solution.countOperationsToEmptyArray([-2,23,5,1,-7,4, -1])
 //solution.countOperationsToEmptyArray([])
