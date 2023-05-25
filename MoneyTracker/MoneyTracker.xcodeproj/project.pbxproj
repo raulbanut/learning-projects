@@ -18,6 +18,11 @@
 		24647FF42A1CAC58008B8804 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 24647FF32A1CAC58008B8804 /* FirebaseAnalytics */; };
 		24647FF62A1CAC58008B8804 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 24647FF52A1CAC58008B8804 /* FirebaseAuth */; };
 		24647FF82A1CAC58008B8804 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 24647FF72A1CAC58008B8804 /* FirebaseAuthCombine-Community */; };
+		24647FFA2A1E3EAF008B8804 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24647FF92A1E3EAF008B8804 /* TabBar.swift */; };
+		24647FFC2A1E6D8D008B8804 /* TabBarWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24647FFB2A1E6D8D008B8804 /* TabBarWrapper.swift */; };
+		24647FFE2A1F8268008B8804 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24647FFD2A1F8268008B8804 /* HomeView.swift */; };
+		246480012A1F8307008B8804 /* MainCoordonator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246480002A1F8307008B8804 /* MainCoordonator.swift */; };
+		24D538CD2A2008E4004A808B /* GreetingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D538CC2A2008E4004A808B /* GreetingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +55,11 @@
 		24647FE12A1CAA6A008B8804 /* MoneyTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTrackerUITests.swift; sourceTree = "<group>"; };
 		24647FE32A1CAA6A008B8804 /* MoneyTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		24647FF02A1CABD3008B8804 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		24647FF92A1E3EAF008B8804 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		24647FFB2A1E6D8D008B8804 /* TabBarWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarWrapper.swift; sourceTree = "<group>"; };
+		24647FFD2A1F8268008B8804 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		246480002A1F8307008B8804 /* MainCoordonator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordonator.swift; sourceTree = "<group>"; };
+		24D538CC2A2008E4004A808B /* GreetingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +115,13 @@
 			children = (
 				24647FC52A1CAA68008B8804 /* MoneyTrackerApp.swift */,
 				24647FC72A1CAA68008B8804 /* ContentView.swift */,
+				24647FFF2A1F826B008B8804 /* Home */,
+				24D538CB2A1FFDEA004A808B /* TabBar */,
 				24647FC92A1CAA6A008B8804 /* Assets.xcassets */,
 				24647FCB2A1CAA6A008B8804 /* MoneyTracker.entitlements */,
 				24647FF02A1CABD3008B8804 /* GoogleService-Info.plist */,
 				24647FCC2A1CAA6A008B8804 /* Preview Content */,
+				246480002A1F8307008B8804 /* MainCoordonator.swift */,
 			);
 			path = MoneyTracker;
 			sourceTree = "<group>";
@@ -136,6 +149,24 @@
 				24647FE32A1CAA6A008B8804 /* MoneyTrackerUITestsLaunchTests.swift */,
 			);
 			path = MoneyTrackerUITests;
+			sourceTree = "<group>";
+		};
+		24647FFF2A1F826B008B8804 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				24647FFD2A1F8268008B8804 /* HomeView.swift */,
+				24D538CC2A2008E4004A808B /* GreetingsView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		24D538CB2A1FFDEA004A808B /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				24647FF92A1E3EAF008B8804 /* TabBar.swift */,
+				24647FFB2A1E6D8D008B8804 /* TabBarWrapper.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,8 +308,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24647FFA2A1E3EAF008B8804 /* TabBar.swift in Sources */,
 				24647FC82A1CAA68008B8804 /* ContentView.swift in Sources */,
 				24647FC62A1CAA68008B8804 /* MoneyTrackerApp.swift in Sources */,
+				246480012A1F8307008B8804 /* MainCoordonator.swift in Sources */,
+				24647FFE2A1F8268008B8804 /* HomeView.swift in Sources */,
+				24647FFC2A1E6D8D008B8804 /* TabBarWrapper.swift in Sources */,
+				24D538CD2A2008E4004A808B /* GreetingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
