@@ -33,14 +33,14 @@ class TabBar: UITabBarController {
         self.viewControllers = [homeViewController, chartViewController, moreViewController]
         
         addTopBorderLayer()
-        configureTabBarAppearance()
+//        configureTabBarAppearance()
     }
     
     private func configureTabBarAppearance() {
         let tabBarItemAppearance = UITabBarItemAppearance()
         let tabBarAppearance = UITabBarAppearance()
         tabBarAppearance.stackedLayoutAppearance = tabBarItemAppearance
-        tabBarAppearance.backgroundColor = .gray.withAlphaComponent(0.1)
+        tabBarAppearance.backgroundColor = .puertoRico.withAlphaComponent(0.1)
         tabBar.standardAppearance = tabBarAppearance
         tabBar.scrollEdgeAppearance = tabBarAppearance
     }
@@ -48,7 +48,7 @@ class TabBar: UITabBarController {
     private func addTopBorderLayer() {
         let topBorderLayer = CALayer()
         topBorderLayer.frame = CGRect(x: 0, y: 0, width: tabBar.frame.width, height: 1)
-        topBorderLayer.backgroundColor = UIColor.black.withAlphaComponent(0.15).cgColor
+        topBorderLayer.backgroundColor = UIColor.puertoRico.withAlphaComponent(0.15).cgColor
         tabBar.layer.addSublayer(topBorderLayer)
     }
     
