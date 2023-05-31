@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24079B2A2A23BA24007009E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24079B292A23BA24007009E6 /* LaunchScreen.storyboard */; };
+		24079B422A24F887007009E6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24079B412A24F887007009E6 /* GoogleService-Info.plist */; };
+		24079B442A25DEFF007009E6 /* Colors+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24079B432A25DEFF007009E6 /* Colors+Extensions.swift */; };
+		24079B472A25F723007009E6 /* LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24079B462A25F723007009E6 /* LocalizedStrings.swift */; };
+		24079B492A260D65007009E6 /* Font+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24079B482A260D65007009E6 /* Font+Extensions.swift */; };
+		24079B4E2A260EEE007009E6 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24079B3C2A23BCCB007009E6 /* Roboto-Bold.ttf */; };
+		24079B4F2A260EF1007009E6 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24079B3B2A23BCCB007009E6 /* Roboto-Medium.ttf */; };
+		24079B502A260EF5007009E6 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24079B3A2A23BCCB007009E6 /* Roboto-Regular.ttf */; };
 		24647FC62A1CAA68008B8804 /* MoneyTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24647FC52A1CAA68008B8804 /* MoneyTrackerApp.swift */; };
 		24647FC82A1CAA68008B8804 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24647FC72A1CAA68008B8804 /* ContentView.swift */; };
 		24647FCA2A1CAA6A008B8804 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24647FC92A1CAA6A008B8804 /* Assets.xcassets */; };
@@ -14,7 +22,6 @@
 		24647FD82A1CAA6A008B8804 /* MoneyTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24647FD72A1CAA6A008B8804 /* MoneyTrackerTests.swift */; };
 		24647FE22A1CAA6A008B8804 /* MoneyTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24647FE12A1CAA6A008B8804 /* MoneyTrackerUITests.swift */; };
 		24647FE42A1CAA6A008B8804 /* MoneyTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24647FE32A1CAA6A008B8804 /* MoneyTrackerUITestsLaunchTests.swift */; };
-		24647FF12A1CABD3008B8804 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24647FF02A1CABD3008B8804 /* GoogleService-Info.plist */; };
 		24647FF42A1CAC58008B8804 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 24647FF32A1CAC58008B8804 /* FirebaseAnalytics */; };
 		24647FF62A1CAC58008B8804 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 24647FF52A1CAC58008B8804 /* FirebaseAuth */; };
 		24647FF82A1CAC58008B8804 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 24647FF72A1CAC58008B8804 /* FirebaseAuthCombine-Community */; };
@@ -23,6 +30,7 @@
 		24647FFE2A1F8268008B8804 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24647FFD2A1F8268008B8804 /* HomeView.swift */; };
 		246480012A1F8307008B8804 /* MainCoordonator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246480002A1F8307008B8804 /* MainCoordonator.swift */; };
 		24D538CD2A2008E4004A808B /* GreetingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D538CC2A2008E4004A808B /* GreetingsView.swift */; };
+		24D538CF2A2148A1004A808B /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D538CE2A2148A1004A808B /* BalanceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +51,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24079B292A23BA24007009E6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24079B3A2A23BCCB007009E6 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		24079B3B2A23BCCB007009E6 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		24079B3C2A23BCCB007009E6 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		24079B3D2A24F6ED007009E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		24079B412A24F887007009E6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		24079B432A25DEFF007009E6 /* Colors+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+Extensions.swift"; sourceTree = "<group>"; };
+		24079B462A25F723007009E6 /* LocalizedStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedStrings.swift; sourceTree = "<group>"; };
+		24079B482A260D65007009E6 /* Font+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extensions.swift"; sourceTree = "<group>"; };
 		24647FC22A1CAA68008B8804 /* MoneyTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24647FC52A1CAA68008B8804 /* MoneyTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTrackerApp.swift; sourceTree = "<group>"; };
 		24647FC72A1CAA68008B8804 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,12 +71,12 @@
 		24647FDD2A1CAA6A008B8804 /* MoneyTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24647FE12A1CAA6A008B8804 /* MoneyTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTrackerUITests.swift; sourceTree = "<group>"; };
 		24647FE32A1CAA6A008B8804 /* MoneyTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		24647FF02A1CABD3008B8804 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		24647FF92A1E3EAF008B8804 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		24647FFB2A1E6D8D008B8804 /* TabBarWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarWrapper.swift; sourceTree = "<group>"; };
 		24647FFD2A1F8268008B8804 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		246480002A1F8307008B8804 /* MainCoordonator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordonator.swift; sourceTree = "<group>"; };
 		24D538CC2A2008E4004A808B /* GreetingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingsView.swift; sourceTree = "<group>"; };
+		24D538CE2A2148A1004A808B /* BalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +107,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24079B392A23BCCB007009E6 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				24079B3C2A23BCCB007009E6 /* Roboto-Bold.ttf */,
+				24079B3B2A23BCCB007009E6 /* Roboto-Medium.ttf */,
+				24079B3A2A23BCCB007009E6 /* Roboto-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		24079B3E2A24F755007009E6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				24079B392A23BCCB007009E6 /* Fonts */,
+				24079B462A25F723007009E6 /* LocalizedStrings.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		24079B452A25F3F0007009E6 /* StyleSheet */ = {
+			isa = PBXGroup;
+			children = (
+				24079B432A25DEFF007009E6 /* Colors+Extensions.swift */,
+				24079B482A260D65007009E6 /* Font+Extensions.swift */,
+			);
+			path = StyleSheet;
+			sourceTree = "<group>";
+		};
 		24647FB92A1CAA68008B8804 = {
 			isa = PBXGroup;
 			children = (
@@ -113,15 +158,19 @@
 		24647FC42A1CAA68008B8804 /* MoneyTracker */ = {
 			isa = PBXGroup;
 			children = (
+				24079B3D2A24F6ED007009E6 /* Info.plist */,
+				24079B292A23BA24007009E6 /* LaunchScreen.storyboard */,
 				24647FC52A1CAA68008B8804 /* MoneyTrackerApp.swift */,
+				246480002A1F8307008B8804 /* MainCoordonator.swift */,
 				24647FC72A1CAA68008B8804 /* ContentView.swift */,
+				24079B452A25F3F0007009E6 /* StyleSheet */,
+				24079B3E2A24F755007009E6 /* Resources */,
 				24647FFF2A1F826B008B8804 /* Home */,
 				24D538CB2A1FFDEA004A808B /* TabBar */,
 				24647FC92A1CAA6A008B8804 /* Assets.xcassets */,
 				24647FCB2A1CAA6A008B8804 /* MoneyTracker.entitlements */,
-				24647FF02A1CABD3008B8804 /* GoogleService-Info.plist */,
+				24079B412A24F887007009E6 /* GoogleService-Info.plist */,
 				24647FCC2A1CAA6A008B8804 /* Preview Content */,
-				246480002A1F8307008B8804 /* MainCoordonator.swift */,
 			);
 			path = MoneyTracker;
 			sourceTree = "<group>";
@@ -156,6 +205,7 @@
 			children = (
 				24647FFD2A1F8268008B8804 /* HomeView.swift */,
 				24D538CC2A2008E4004A808B /* GreetingsView.swift */,
+				24D538CE2A2148A1004A808B /* BalanceView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -282,8 +332,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				24647FCE2A1CAA6A008B8804 /* Preview Assets.xcassets in Resources */,
+				24079B502A260EF5007009E6 /* Roboto-Regular.ttf in Resources */,
+				24079B422A24F887007009E6 /* GoogleService-Info.plist in Resources */,
+				24079B4F2A260EF1007009E6 /* Roboto-Medium.ttf in Resources */,
+				24079B4E2A260EEE007009E6 /* Roboto-Bold.ttf in Resources */,
+				24079B2A2A23BA24007009E6 /* LaunchScreen.storyboard in Resources */,
 				24647FCA2A1CAA6A008B8804 /* Assets.xcassets in Resources */,
-				24647FF12A1CABD3008B8804 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,13 +362,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24079B442A25DEFF007009E6 /* Colors+Extensions.swift in Sources */,
 				24647FFA2A1E3EAF008B8804 /* TabBar.swift in Sources */,
 				24647FC82A1CAA68008B8804 /* ContentView.swift in Sources */,
 				24647FC62A1CAA68008B8804 /* MoneyTrackerApp.swift in Sources */,
+				24079B472A25F723007009E6 /* LocalizedStrings.swift in Sources */,
 				246480012A1F8307008B8804 /* MainCoordonator.swift in Sources */,
 				24647FFE2A1F8268008B8804 /* HomeView.swift in Sources */,
+				24D538CF2A2148A1004A808B /* BalanceView.swift in Sources */,
 				24647FFC2A1E6D8D008B8804 /* TabBarWrapper.swift in Sources */,
 				24D538CD2A2008E4004A808B /* GreetingsView.swift in Sources */,
+				24079B492A260D65007009E6 /* Font+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,12 +531,14 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoneyTracker/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -511,12 +571,14 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoneyTracker/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

@@ -136,25 +136,49 @@ extension Font {
         //MARK: - Bold
         
         struct Bold {
-            /// Roboto-Medium
+            /// Roboto-Bold
+            /// 44px
+            static var largeTitle: Font {
+                bold(44)
+            }
+            
+            /// Roboto-Bold
+            /// 38px
+            static var title1: Font {
+                bold(38)
+            }
+            
+            /// Roboto-Bold
             /// 34px
             static var title2: Font {
                 bold(34)
             }
             
-            /// Roboto-Medium
+            /// Roboto-Bold
             /// 31px
             static var title3: Font {
                 bold(31)
             }
             
-            /// Roboto-Medium
+            /// Roboto-Bold
             /// 28px
             static var body: Font {
                 bold(28)
             }
             
-            /// Roboto-Medium
+            /// Roboto-Bold
+            /// 23px
+            static var footnote: Font {
+                bold(23)
+            }
+            
+            /// Roboto-Bold
+            /// 22px
+            static var caption1: Font {
+                bold(22)
+            }
+            
+            /// Roboto-Bold
             /// 20px
             static var caption2: Font {
                 bold(20)
