@@ -12,10 +12,12 @@ import SwiftUI
 extension UIColor {
     
     static let puertoRico = UIColor(named: "PuertoRico")!
+    static let lochinvar = UIColor(named: "Lochinvar")!
 }
 
 extension Color {
    
     static let puertoRico = Color("PuertoRico")
+    static let lochinvar = Color("Lochinvar")
 }
 
