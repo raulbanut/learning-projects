@@ -1,3 +1,21 @@
+# 
+
+# Find Customer Referee. LeetCode 584
+# Write an SQL query to report the names of the customer that are not referred by the customer with id = 2.
+
+SELECT name 
+FROM Customer
+Where referee_id <> 2 or referee_id is null
+
+# Employee Bonus. LeetCode 577
+# Write an SQL query to report the name and bonus amount of each employee with a bonus less than 1000.
+
+SELECT t1.name, t2.bonus
+FROM Employee t1 
+LEFT JOIN Bonus t2
+ON t1.empId = t2.empId
+where t2.bonus < 1000 or t2.bonus is null
+
 #  Delete Duplicate Emails. LeetCode 196
 # Write an SQL query to delete all the duplicate emails, keeping only one unique email with the smallest id. Note that you are supposed to write a DELETE statement and not a SELECT one.
 
@@ -47,7 +65,6 @@ SELECT t1.id
 FROM Weather t1, Weather t2
 WHERE t1.temperature > t2.temperature
 AND DATEDIFF(t1.recordDate, t2.recordDate) = 1
-
 
 # Find Followers Count. LeetCode 1729
 # Write an SQL query that will, for each user, return the number of followers. Return the result table ordered by user_id in ascending order.
