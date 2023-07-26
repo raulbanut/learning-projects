@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cool People View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CoolPeopleViewController" customModule="testApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vXf-kj-aEf">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="coolPeopleIdentifier" rowHeight="100" id="Jha-O6-Nb0" customClass="CoolPeopleTableViewCell" customModule="testApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jha-O6-Nb0" id="RCi-rR-ics">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hU9-IC-tEC">
+                                                    <rect key="frame" x="100" y="0.0" width="293" height="100"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lMw-vh-ejS">
+                                                        <size key="itemSize" width="128" height="128"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionCellIdentifier" id="rFn-AF-tU8" customClass="CoolPeopleCollectionViewCell" customModule="testApp" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="-14" width="128" height="128"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="l5z-tw-CRR">
+                                                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71u-vV-nJA">
+                                                                        <rect key="frame" x="43" y="54" width="42" height="21"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="100" id="3NT-oJ-GVv"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="trailing" secondItem="71u-vV-nJA" secondAttribute="trailing" id="Nuk-vk-RRz"/>
+                                                                    <constraint firstItem="71u-vV-nJA" firstAttribute="leading" secondItem="l5z-tw-CRR" secondAttribute="leading" id="fyw-oW-slx"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="71u-vV-nJA" secondAttribute="bottom" id="im6-B4-UOe"/>
+                                                                    <constraint firstItem="71u-vV-nJA" firstAttribute="top" secondItem="l5z-tw-CRR" secondAttribute="top" id="oNs-1O-RJf"/>
+                                                                </constraints>
+                                                            </collectionViewCellContentView>
+                                                            <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                            <connections>
+                                                                <outlet property="heightConstraint" destination="3NT-oJ-GVv" id="J8W-f7-FX8"/>
+                                                            </connections>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="Jha-O6-Nb0" id="sRm-nw-eOc"/>
+                                                        <outlet property="delegate" destination="Jha-O6-Nb0" id="3ZA-AV-paX"/>
+                                                    </connections>
+                                                </collectionView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Serban.png" translatesAutoresizingMaskIntoConstraints="NO" id="VdL-Wx-s1K">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="VdL-Wx-s1K" secondAttribute="height" multiplier="1:1" id="5xv-7b-hhG"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="hU9-IC-tEC" firstAttribute="top" secondItem="RCi-rR-ics" secondAttribute="top" id="0hB-v8-KFT"/>
+                                                <constraint firstItem="VdL-Wx-s1K" firstAttribute="leading" secondItem="RCi-rR-ics" secondAttribute="leading" id="RGi-2X-aqh"/>
+                                                <constraint firstAttribute="bottom" secondItem="VdL-Wx-s1K" secondAttribute="bottom" id="RTc-T8-VaB"/>
+                                                <constraint firstAttribute="bottom" secondItem="hU9-IC-tEC" secondAttribute="bottom" id="W4w-gX-gPe"/>
+                                                <constraint firstItem="hU9-IC-tEC" firstAttribute="leading" secondItem="VdL-Wx-s1K" secondAttribute="trailing" id="ZQU-it-7Th"/>
+                                                <constraint firstAttribute="trailing" secondItem="hU9-IC-tEC" secondAttribute="trailing" id="bg1-Lt-gdz"/>
+                                                <constraint firstItem="VdL-Wx-s1K" firstAttribute="top" secondItem="RCi-rR-ics" secondAttribute="top" id="sy6-66-RL0"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <connections>
+                                            <outlet property="coolImageView" destination="VdL-Wx-s1K" id="dPc-fL-ehd"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="fhN-db-ZA3"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="0Rt-Hp-Xeq"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="tintColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vXf-kj-aEf" secondAttribute="bottom" id="6zj-oe-hQg"/>
+                            <constraint firstItem="vXf-kj-aEf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Jnh-Yl-gW7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vXf-kj-aEf" secondAttribute="trailing" id="Wih-QU-80G"/>
+                            <constraint firstItem="vXf-kj-aEf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xbU-eU-e5i"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Serban.png" width="256" height="256"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

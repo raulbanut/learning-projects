@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "MissionImpossible.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
