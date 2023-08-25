@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="N1F-AT-iYo">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Vv2-4x-FTT">
+            <objects>
+                <navigationController id="N1F-AT-iYo" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="n5x-bX-2OC">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="FQR-DC-aGH" kind="relationship" relationship="rootViewController" id="jQV-XG-KOP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Cq-N5-h4X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2057" y="-227"/>
+        </scene>
+        <!--Upcoming-->
+        <scene sceneID="jsx-7I-JHk">
+            <objects>
+                <viewController id="NTF-0N-acc" customClass="SecondTabViewController" customModule="ChallengeThreeURL" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WJv-LS-Mj5">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="5ke-zO-lL5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Upcoming" image="calendar.circle.fill" catalog="system" id="ZIV-rG-blu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dN6-ih-Uvg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="445" y="52"/>
+        </scene>
+        <!--Now Playing-->
+        <scene sceneID="4ex-9D-cV2">
+            <objects>
+                <viewController id="Q96-8k-cLt" customClass="FirstTabViewController" customModule="ChallengeThreeURL" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Otj-vQ-P9y">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="J9Z-fY-WpY">
+                                <rect key="frame" x="0.0" y="103" width="393" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Q96-8k-cLt" id="TgZ-zi-0p9"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5zI-AQ-Z8p">
+                                <rect key="frame" x="0.0" y="159" width="393" height="610"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="v1N-Dl-IBR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="v1N-Dl-IBR" firstAttribute="bottom" secondItem="5zI-AQ-Z8p" secondAttribute="bottom" id="38L-kt-fxz"/>
+                            <constraint firstItem="5zI-AQ-Z8p" firstAttribute="leading" secondItem="v1N-Dl-IBR" secondAttribute="leading" id="HDk-1u-eYT"/>
+                            <constraint firstItem="5zI-AQ-Z8p" firstAttribute="top" secondItem="J9Z-fY-WpY" secondAttribute="bottom" id="K0f-5b-GPl"/>
+                            <constraint firstItem="J9Z-fY-WpY" firstAttribute="leading" secondItem="v1N-Dl-IBR" secondAttribute="leading" id="Qo1-Q0-0pu"/>
+                            <constraint firstAttribute="trailing" secondItem="J9Z-fY-WpY" secondAttribute="trailing" id="b3a-JX-cgX"/>
+                            <constraint firstItem="J9Z-fY-WpY" firstAttribute="top" secondItem="v1N-Dl-IBR" secondAttribute="top" id="k3R-gi-uQS"/>
+                            <constraint firstItem="v1N-Dl-IBR" firstAttribute="trailing" secondItem="5zI-AQ-Z8p" secondAttribute="trailing" id="vZD-CD-j52"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Now Playing" image="play.circle.fill" catalog="system" id="e4f-SL-oIe"/>
+                    <connections>
+                        <outlet property="searchBar" destination="J9Z-fY-WpY" id="dB1-ln-NKs"/>
+                        <outlet property="tableView" destination="5zI-AQ-Z8p" id="ruW-ST-ItP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jif-Vs-cD0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-167.17557251908397" y="-576.05633802816908"/>
+        </scene>
+        <!--Custom Tab Bar Controller-->
+        <scene sceneID="Tew-Sg-20h">
+            <objects>
+                <tabBarController id="FQR-DC-aGH" customClass="CustomTabBarController" customModule="ChallengeThreeURL" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="CXc-uC-mn7"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qAI-eJ-Nnz">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Q96-8k-cLt" kind="relationship" relationship="viewControllers" id="daD-nH-4e9"/>
+                        <segue destination="NTF-0N-acc" kind="relationship" relationship="viewControllers" id="Rs8-jw-5lh"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u02-5U-m6W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1143" y="-227"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="calendar.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="play.circle.fill" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
