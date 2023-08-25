@@ -13,12 +13,11 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITableViewDelegat
     @IBOutlet weak var normalImageView: UIImageView!
     @IBOutlet weak var blurredImageView: UIImageView!
     
-    @IBOutlet weak var BlurTop: NSLayoutConstraint!
-    @IBOutlet weak var ImageTop: NSLayoutConstraint!
+    @IBOutlet weak var blurTop: NSLayoutConstraint!
+    @IBOutlet weak var imageTop: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
@@ -36,10 +35,12 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITableViewDelegat
         print("scale \(scale) || maxScale \(maxScale)")
         let minScale = min(scale, maxScale)
         
+        // Fix the image, set the top constraint constant
         let newTopConstant = max(offsetY, -headerHeight)
-        ImageTop.constant = newTopConstant
-        BlurTop.constant = newTopConstant
+        imageTop.constant = newTopConstant
+        blurTop.constant = newTopConstant
         
+        // Zoom In
         blurredImageView.transform = CGAffineTransform(scaleX: minScale, y: minScale)
         normalImageView.transform = CGAffineTransform(scaleX: minScale, y: minScale)
         

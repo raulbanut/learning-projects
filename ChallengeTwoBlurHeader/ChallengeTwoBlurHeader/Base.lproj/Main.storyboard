@@ -23,10 +23,10 @@
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="204"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ManchesterCity_blurred.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="CK7-W9-34f">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ManchesterCity_blurred" translatesAutoresizingMaskIntoConstraints="NO" id="CK7-W9-34f">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="204"/>
                                         </imageView>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ManchesterCity.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cJB-EF-XVj">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ManchesterCity" translatesAutoresizingMaskIntoConstraints="NO" id="cJB-EF-XVj">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="204"/>
                                         </imageView>
                                     </subviews>
@@ -57,9 +57,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="BlurTop" destination="2hB-9j-EDD" id="aMV-K0-B4o"/>
-                        <outlet property="ImageTop" destination="9LP-B9-Zab" id="gkl-3z-3Vb"/>
+                        <outlet property="blurTop" destination="2hB-9j-EDD" id="aMV-K0-B4o"/>
                         <outlet property="blurredImageView" destination="CK7-W9-34f" id="NwP-F9-Msl"/>
+                        <outlet property="imageTop" destination="9LP-B9-Zab" id="gkl-3z-3Vb"/>
                         <outlet property="normalImageView" destination="cJB-EF-XVj" id="N3S-HR-Icj"/>
                         <outlet property="tableView" destination="e9b-mT-CrF" id="1Ae-UT-KXK"/>
                     </connections>
@@ -70,8 +70,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ManchesterCity.jpg" width="2048" height="1365"/>
-        <image name="ManchesterCity_blurred.jpg" width="491.51998901367188" height="327.60000610351562"/>
+        <image name="ManchesterCity" width="2048" height="1365"/>
+        <image name="ManchesterCity_blurred" width="2048" height="1365"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
