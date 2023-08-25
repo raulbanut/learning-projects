@@ -12,25 +12,20 @@ class ItemsViewController: UITableViewController {
     
     var itemStore: ItemStore!
     
-    @IBAction func addNewItem(_ sender: UIButton) {
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        
+        navigationItem.leftBarButtonItem = editButtonItem
+    }
+    
+    @IBAction func addNewItem(_ sender: UIBarButtonItem) {
         let newItem = itemStore.createItem()
         
         if let index = itemStore.allItems.firstIndex(of: newItem) {
             let indexPath = IndexPath(row: index, section: 0)
             
             tableView.insertRows(at: [indexPath], with: .fade)
-        }
-    }
-    
-    @IBAction func toggleEditingMode(_ sender: UIButton) {
-        if isEditing {
-            sender.setTitle("Edit", for: .normal)
-            
-            setEditing(false, animated: true)
-        } else {
-            sender.setTitle("Done", for: .normal)
-            
-            setEditing(true, animated: true)
+            //            navigationController?.navigationBar.backItem?.title = ""
         }
     }
     
@@ -117,9 +112,15 @@ extension ItemsViewController {
                 
                 // Get the item associated with this row and pass it along
                 let item = itemStore.allItems[row]
-                let detailViewController
-                = segue.destination as! DetailViewController
+                let detailViewController = segue.destination as! DetailViewController
                 detailViewController.item = item
+                
+                self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "",
+                                                                        style: .plain,
+                                                                        target: nil,
+                                                                        action: nil)
+                
+                self.navigationItem.backBarButtonItem?.tintColor = .black
             }
         default:
             preconditionFailure("Unexpected segue identifier.")
@@ -128,7 +129,7 @@ extension ItemsViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-
+        
         tableView.reloadData()
     }
 }

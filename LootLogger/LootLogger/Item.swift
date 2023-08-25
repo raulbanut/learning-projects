@@ -8,12 +8,12 @@
 import Foundation
 import UIKit
 
-class Item: Equatable {
+class Item: Equatable, Codable {
     
     var name: String
     var valueInDollars: Int
     var serialNumber: String?
-    let dateCreated: Date
+    var dateCreated: Date
     var isFavorite: Bool
     
     init(name: String, valueInDollars: Int, serialNumber: String? = nil, dateCreated: Date, isFavorite: Bool = false) {

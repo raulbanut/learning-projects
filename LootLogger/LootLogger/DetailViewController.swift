@@ -14,7 +14,22 @@ class DetailViewController: UIViewController {
     @IBOutlet var valueField: UITextField!
     @IBOutlet var dateLabel: UILabel!
     
-    var item: Item!
+    @IBAction func backgroundTapped(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
+    
+    var item: Item! {
+        didSet {
+            let label = UILabel()
+            label.textColor = .black
+            label.text = item.name
+            label.textAlignment = .center
+            label.font = UIFont.boldSystemFont(ofSize: 17)
+            label.adjustsFontSizeToFitWidth = true
+            
+            navigationItem.titleView = label
+        }
+    }
     
     let numberFormatter: NumberFormatter = {
         var formatter = NumberFormatter()
@@ -43,6 +58,8 @@ class DetailViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
+        view.endEditing(true)
+        
         item.name = nameField.text ?? ""
         item.serialNumber = serialField.text
         
@@ -52,5 +69,17 @@ class DetailViewController: UIViewController {
         } else {
             item.valueInDollars = 0
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationVC = segue.destination as! DateViewController
+        destinationVC.detailViewController = self
+    }
+}
+
+extension DetailViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }

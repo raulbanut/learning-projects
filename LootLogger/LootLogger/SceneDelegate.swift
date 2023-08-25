@@ -23,6 +23,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         // Access the ItemsViewController and set its item store
         let navController = window!.rootViewController as! UINavigationController
+        navController.navigationBar.tintColor = .black
+        
         let itemsController = navController.topViewController as! ItemsViewController
         itemsController.itemStore = itemStore
     }

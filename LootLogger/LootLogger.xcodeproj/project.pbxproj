@@ -20,6 +20,7 @@
 		871CF67F2A67150F00B5EE4B /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871CF67E2A67150F00B5EE4B /* ItemStore.swift */; };
 		871CF6C92A6D885600B5EE4B /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871CF6C82A6D885600B5EE4B /* ItemTableViewCell.swift */; };
 		871CF6CB2A6EDD5200B5EE4B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871CF6CA2A6EDD5200B5EE4B /* DetailViewController.swift */; };
+		87F1EB7A2A78453800817223 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F1EB792A78453800817223 /* DateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		871CF67E2A67150F00B5EE4B /* ItemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
 		871CF6C82A6D885600B5EE4B /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		871CF6CA2A6EDD5200B5EE4B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		87F1EB792A78453800817223 /* DateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				871CF6C82A6D885600B5EE4B /* ItemTableViewCell.swift */,
 				871CF67A2A65848C00B5EE4B /* ItemsViewController.swift */,
 				871CF6CA2A6EDD5200B5EE4B /* DetailViewController.swift */,
+				87F1EB792A78453800817223 /* DateViewController.swift */,
 				871CF6502A6583E400B5EE4B /* Main.storyboard */,
 				871CF6532A6583E500B5EE4B /* Assets.xcassets */,
 				871CF6552A6583E500B5EE4B /* LaunchScreen.storyboard */,
@@ -270,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87F1EB7A2A78453800817223 /* DateViewController.swift in Sources */,
 				871CF67D2A65873E00B5EE4B /* Item.swift in Sources */,
 				871CF67B2A65848C00B5EE4B /* ItemsViewController.swift in Sources */,
 				871CF64B2A6583E400B5EE4B /* AppDelegate.swift in Sources */,
@@ -459,8 +463,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -487,8 +491,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
